@@ -22,12 +22,12 @@
     </properties>
 
     <dependencies>
-<!--mail-->
+        <!--mail-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
-<!--конец mail-->
+        <!--конец mail-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
@@ -78,6 +78,13 @@
             <artifactId>spring-security-test</artifactId>
         </dependency>
         <!--        Security конец-->
+
+        <!--        flyway миграция-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+        <!--        flyway конец-->
     </dependencies>
 
     <build>
@@ -85,6 +92,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.5.3</version>
             </plugin>
         </plugins>
     </build>

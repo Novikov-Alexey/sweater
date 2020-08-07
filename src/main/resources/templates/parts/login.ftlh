@@ -28,7 +28,6 @@
         <#if !isRegisterForm><a href="/registration">Add new user</a></#if>
         <button type="submit" class="btn btn-primary" type="submit">${btnText}</button>
 
-
     </form>
 </#macro>
 
