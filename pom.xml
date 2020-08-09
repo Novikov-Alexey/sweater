@@ -97,6 +97,12 @@
             <artifactId>hibernate-validator</artifactId>
             <version>6.1.5.Final</version>
         </dependency>
+
+        <!--        для хранения rememberMe в БД-->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-jdbc</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

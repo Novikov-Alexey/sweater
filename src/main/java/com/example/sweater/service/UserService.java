@@ -69,7 +69,6 @@ public class UserService implements UserDetailsService {
         if (user == null) {
             return false;
         }
-        user.setPasswordСonfirmation(UUID.randomUUID().toString());
         user.setActive(true);
         user.setActivationCode(null);
         userRepo.save(user);

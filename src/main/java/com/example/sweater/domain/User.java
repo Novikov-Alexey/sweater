@@ -20,10 +20,6 @@ public class User implements UserDetails {
     @NotBlank(message = "Password cannot be empty")
     private String password;
 
-    @Transient
-    @NotBlank(message = "Password Сonfirmation cannot be empty")
-    private String passwordСonfirmation;
-
     private boolean active;
 
     @Email(message = "Email is not correct")
@@ -124,11 +120,4 @@ public class User implements UserDetails {
         this.activationCode = activationCode;
     }
 
-    public String getPasswordСonfirmation() {
-        return passwordСonfirmation;
-    }
-
-    public void setPasswordСonfirmation(String passwordСonfirmation) {
-        this.passwordСonfirmation = passwordСonfirmation;
-    }
 }
